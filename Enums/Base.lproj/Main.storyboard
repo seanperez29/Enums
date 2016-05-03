@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Enums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdo-0p-kZF">
+                                <rect key="frame" x="217" y="20" width="166" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="AFl-vU-edE"/>
+                                    <constraint firstAttribute="height" constant="138" id="UWN-el-H0T"/>
+                                </constraints>
+                                <state key="normal" image="bwm"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAe-KF-Bze"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAg-0Y-6Pp">
+                                <rect key="frame" x="217" y="166" width="166" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="O1F-FT-Ed8"/>
+                                    <constraint firstAttribute="width" constant="166" id="jt6-gA-Fsh"/>
+                                </constraints>
+                                <state key="normal" image="honda"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xie-wC-nAP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWt-nq-L0k">
+                                <rect key="frame" x="217" y="310" width="166" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="AZE-hc-hRP"/>
+                                    <constraint firstAttribute="height" constant="138" id="ovw-kj-nPD"/>
+                                </constraints>
+                                <state key="normal" image="tesla"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDZ-So-X85"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvP-Mc-793">
+                                <rect key="frame" x="217" y="454" width="166" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="a1R-dG-aOf"/>
+                                    <constraint firstAttribute="height" constant="138" id="tNL-US-REp"/>
+                                </constraints>
+                                <state key="normal" image="subaru"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQl-iw-eGF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="241-wc-l9s">
+                                <rect key="frame" x="403" y="289" width="177" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="VMe-Zg-XCv"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xf1-8e-utf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="241-wc-l9s" firstAttribute="leading" secondItem="HAg-0Y-6Pp" secondAttribute="trailing" constant="20" id="3yY-eV-La6"/>
+                            <constraint firstItem="KvP-Mc-793" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5qK-tM-yiS"/>
+                            <constraint firstItem="KvP-Mc-793" firstAttribute="top" secondItem="oWt-nq-L0k" secondAttribute="bottom" constant="6" id="Bz5-SN-aVp"/>
+                            <constraint firstItem="HAg-0Y-6Pp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGc-xo-PeY"/>
+                            <constraint firstItem="oWt-nq-L0k" firstAttribute="top" secondItem="HAg-0Y-6Pp" secondAttribute="bottom" constant="6" id="NjI-It-SKG"/>
+                            <constraint firstItem="Kdo-0p-kZF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WBo-7X-USd"/>
+                            <constraint firstItem="Kdo-0p-kZF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUE-Qa-FsV"/>
+                            <constraint firstItem="HAg-0Y-6Pp" firstAttribute="top" secondItem="Kdo-0p-kZF" secondAttribute="bottom" constant="8" id="oKm-VB-OpL"/>
+                            <constraint firstItem="oWt-nq-L0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vEF-j1-LKz"/>
+                            <constraint firstItem="241-wc-l9s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vwv-AW-7xf"/>
+                            <constraint firstItem="241-wc-l9s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="x0y-yz-mvX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theLbl" destination="241-wc-l9s" id="Vid-O5-Mvr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bwm" width="884" height="497"/>
+        <image name="honda" width="640" height="480"/>
+        <image name="subaru" width="1024" height="768"/>
+        <image name="tesla" width="2647" height="1600"/>
+    </resources>
+</document>
